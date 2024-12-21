@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply bg-black;
+  height: 100%;
+  overflow-x: hidden; 
+}
+
+/* For image slide-in and fade-in */
+.in-view {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  z-index: -10;
+}
+
+/* For text fade-in */
+.in-view h1,
+.in-view h2,
+.in-view p {
+  opacity: 1 !important;
+}
+
+.scroll-down {
+  font-size: 1.25rem;
+  color: white;
+  position: relative;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid white;
+  position: relative;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.glow-effect {
+  text-shadow: 0 0 10px rgba(255, 223, 0, 0.8),
+               0 0 20px rgba(255, 223, 0, 0.6),
+               0 0 30px rgba(255, 223, 0, 0.4);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Starting position */
+  }
+  50% {
+    transform: translateY(-10px); /* Bounce up */
+  }
+}
+
+/* Apply the bounce animation */
+.bouncingBike {
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+.noBounce {
+  animation: none;
+}
+
