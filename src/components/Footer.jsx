@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="bg-black text-center lg:text-left h-auto py-8">
             <div className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20">
 
-                // icons
+                
                 <div className="flex justify-center mb-6 lg:mb-0">
                     <a className="mr-6 text-white dark:text-neutral-200">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -34,7 +34,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                // texts
+                
                 <div className="text-white dark:text-neutral-200">
                     <p>© 2024 Company Name. All Rights Reserved.</p>
                 </div>

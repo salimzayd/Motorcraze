@@ -8,11 +8,13 @@ import Location from './pages/Navigation';
 import Scrollef from './pages/Slide';
 import Testimonial from './pages/Testimonial';
 import Footer from './components/Footer';
+import MouseTrailEffect from './pages/Mouseeffect';
 
 
 function App() {
   return (
     <>
+      <MouseTrailEffect />
        <Navbar />
        <Home />
       <Brands /> 
